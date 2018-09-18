@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Amanda Schemmel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Montserrat|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./stylesheets/screen.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script src="./scripts.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper">
+          <ul id="nav-mobile" class="right">
+            <li>
+              <a href="#splash">Home
+                <span class="line"></span>
+              </a>
+            </li>
+            <li>
+              <a href="#gallery">
+                Gallery
+                <span class="line"></span>
+              </a>
+            </li>
+            <li>
+              <a href="#about">
+                About
+                <span class="line"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <section class="section scrollspy" id="splash">
+    </section>
+
+    <div class="container">
+      <section class="section scrollspy" id="gallery">
+        <h2 class="center-align">Gallery</h2>
+        <div class="row">
+          <div class="col l6">
+            <a class="modal-trigger" href="#boeing-modal">
+              <div class="col m12">
+                <div class="card">
+                    <div class="card-image">
+                      <img src="images/shows/boeing2.JPG">
+                      <div class="overlay">
+                        <h4>CSU Stanislaus</h4>
+                        <h5>2017</h5>
+                      </div>
+                    </div>
+                  <div class="card-content">
+                    <span class="card-title">Boeing Boeing</span>
+                    <i class="fa fa-expand"></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="modal-trigger" href="#tar-modal">
+              <div class="col m12">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="images/shows/tar1.JPG">
+                    <div class="overlay">
+                      <h4>CSU Stanislaus</h4>
+                      <h5>2018</h5>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title">Tartuffe</span>
+                    <i class="fa fa-expand"></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col l6">
+            <a class="modal-trigger" href="#pipi-modal">
+              <div class="col m12">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="images/shows/pipi1.jpeg">
+                    <div class="overlay">
+                      <h4>CSU Stanislaus</h4>
+                      <h5>2017</h5>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title">Pippi Longstocking</span>
+                    <i class="fa fa-expand"></i>
+                  </div>
+                </div>
+
+              </div>
+            </a>
+            <a class="modal-trigger" href="#headshot-modal">
+              <div class="col m12">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="images/headshots/amanda1.JPG">
+                    <div class="overlay">
+                      <h4>Assorted Walls</h4>
+                      <h5>2018</h5>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title">Headshots</span>
+                    <i class="fa fa-expand"></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Modals -->
+          <div id="boeing-modal" class="modal">
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></a>
+            </div>
+            <div class="modal-content">
+              <div class="row">
+                <div class="col m12 s12">
+                  <div class="slider">
+                    <ul class="slides">
+                      <li>
+                        <img src="./images/shows/boeing1.jpg"> <!-- random image -->
+                      </li>
+                      <li>
+                        <img style="background-position: right;" src="./images/shows/boeing2.jpg"> <!-- random image -->
+                      </li>
+                      <li>
+                        <img style="background-position: left;" src="./images/shows/boeing3.jpg"> <!-- random image -->
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="pipi-modal" class="modal">
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></a>
+            </div>
+            <div class="modal-content">
+              <div class="row">
+                <div class="col m12 s12">
+                  <div class="slider">
+                    <ul class="slides">
+                      <li>
+                        <img src="./images/shows/pipi1.jpeg"> <!-- random image -->
+                      </li>
+                      <li>
+                        <img class="" src="./images/shows/pipi2.jpeg"> <!-- random image -->
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="tar-modal" class="modal">
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></a>
+            </div>
+            <div class="modal-content">
+              <div class="row">
+                <div class="col m12 s12">
+                  <div class="slider">
+                    <ul class="slides">
+                      <li>
+                        <img style="background-position: left;" src="./images/shows/tar1.jpg"> <!-- random image -->
+                      </li>
+                      <li>
+                        <img class="" src="./images/shows/tar2.jpg"> <!-- random image -->
+                      </li>
+                      <li>
+                        <img style="background-position: right;" class="" src="./images/shows/tar3.jpg"> <!-- random image -->
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="headshot-modal" class="modal">
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></a>
+            </div>
+            <div class="modal-content">
+              <div class="row">
+                <div class="col m12 s12">
+                  <div class="slider">
+                    <ul class="slides">
+                      <li>
+                        <img src="./images/headshots/amanda1.JPG"> <!-- random image -->
+                      </li>
+                      <li>
+                        <img src="./images/headshots/amanda2.JPG"> <!-- random image -->
+                      </li>
+                      <li>
+                        <img src="./images/headshots/image1.JPG"> <!-- random image -->
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+    </div>
+
+    <section id="about" class="section scrollspy">
+      <div class="row">
+        <div class="col s12 l6 bg-image"></div>
+        <div class="col s12 l6 bg-color">
+          <h2>About Amanda</h2>
+          <p>Amanda Schemmel is an actress, educator, and funny lady based in Boston, MA. Originally from California, Amanda has performed in a wide variety of regional, community, and professional staged productions.</p>
+          <a href="./amanda_schemmel_resume.pdf" target="_blank"><button class="btn waves-effect waves-darken">Resume</button></a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>Copyright &copy; <span id="year"></span> Amanda Schemmel</p>
+      </div>
+    </footer>
+  </body>
+</html>

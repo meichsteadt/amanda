@@ -1,0 +1,229 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 12, ../sass/screen.scss */
+section {
+  margin-bottom: 40px;
+  min-height: 100vh;
+}
+/* line 16, ../sass/screen.scss */
+section h2 {
+  color: #A8AE6A;
+  text-align: center;
+}
+/* line 21, ../sass/screen.scss */
+section p {
+  font-size: 18px;
+}
+
+/* line 26, ../sass/screen.scss */
+.darken-image {
+  filter: brightness(0.7);
+}
+
+/* line 30, ../sass/screen.scss */
+body {
+  font-family: 'Montserrat';
+}
+
+/* line 34, ../sass/screen.scss */
+h1, h2, h3, h4, h5 {
+  font-family: 'Open Sans';
+}
+
+/* line 40, ../sass/screen.scss */
+.navbar-fixed {
+  position: absolute;
+  display: none;
+}
+
+/* line 45, ../sass/screen.scss */
+nav {
+  background-color: #fff;
+  color: #A8AE6A;
+  padding: 0 10px;
+}
+/* line 51, ../sass/screen.scss */
+nav ul a {
+  color: inherit;
+  font-size: 18px;
+  position: relative;
+}
+/* line 56, ../sass/screen.scss */
+nav ul a.active .line {
+  opacity: 1;
+}
+/* line 61, ../sass/screen.scss */
+nav ul a:hover {
+  background-color: transparent;
+}
+/* line 67, ../sass/screen.scss */
+nav .line {
+  opacity: 0;
+  transition: opacity .2s ease;
+  border-top: 2px solid #A8AE6A;
+  width: calc(100% - 30px);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -20px);
+}
+
+@media screen and (max-width: 992px) {
+  /* line 80, ../sass/screen.scss */
+  #nav-mobile {
+    float: none !important;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* line 93, ../sass/screen.scss */
+#splash {
+  height: 100vh;
+  width: 100%;
+  background: url("../images/headshots/splash.png") no-repeat center center;
+  background-size: cover;
+}
+@media screen and (max-width: 992px) {
+  /* line 100, ../sass/screen.scss */
+  #splash {
+    background: url("../images/headshots/splash_mobile.png") no-repeat center center;
+    background-size: cover;
+  }
+}
+
+/* line 108, ../sass/screen.scss */
+.modal {
+  width: 50%;
+  height: 95%;
+  max-height: 95%;
+}
+@media screen and (max-width: 992px) {
+  /* line 114, ../sass/screen.scss */
+  .modal {
+    width: 90%;
+  }
+}
+/* line 119, ../sass/screen.scss */
+.modal .modal-content {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* line 125, ../sass/screen.scss */
+.modal .modal-footer {
+  height: auto;
+}
+
+/* line 129, ../sass/screen.scss */
+.slider .indicators .indicator-item.active {
+  background-color: #333;
+}
+
+/* line 133, ../sass/screen.scss */
+.card-title {
+  color: #82674A;
+}
+
+/* line 137, ../sass/screen.scss */
+.card {
+  min-height: 302px;
+}
+/* line 140, ../sass/screen.scss */
+.card:hover .overlay {
+  opacity: 1;
+}
+
+/* line 146, ../sass/screen.scss */
+.card-image {
+  position: relative;
+}
+
+/* line 150, ../sass/screen.scss */
+.fa-expand {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  color: #A8AE6A;
+}
+
+/* line 157, ../sass/screen.scss */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+/* line 171, ../sass/screen.scss */
+.overlay h4, .overlay h5 {
+  color: #fff;
+}
+
+/* line 177, ../sass/screen.scss */
+#about {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+/* line 181, ../sass/screen.scss */
+#about .row {
+  margin: 0;
+}
+/* line 185, ../sass/screen.scss */
+#about .col {
+  min-height: 100vh;
+  padding: 0;
+}
+/* line 190, ../sass/screen.scss */
+#about .bg-image {
+  background: url("../images/headshots/amanda_tall.JPG") no-repeat center center;
+  background-size: cover;
+}
+/* line 195, ../sass/screen.scss */
+#about .bg-color {
+  padding: 20px 40px 50px 40px;
+  background-color: #D2B33F;
+  display: flex;
+  align-items: space-around;
+  flex-wrap: wrap;
+}
+/* line 202, ../sass/screen.scss */
+#about .bg-color h2, #about .bg-color p {
+  color: white;
+  text-align: left;
+}
+/* line 207, ../sass/screen.scss */
+#about .bg-color p {
+  font-size: 26px;
+}
+/* line 211, ../sass/screen.scss */
+#about .bg-color li {
+  font-size: 18px;
+}
+/* line 216, ../sass/screen.scss */
+#about button {
+  background-color: white;
+  color: #D2B33F;
+  width: 200px;
+  height: 50px;
+  font-size: 18px;
+}
+
+/* line 226, ../sass/screen.scss */
+footer {
+  height: 50px;
+  border-top: 1px solid #ccc;
+  text-align: center;
+}

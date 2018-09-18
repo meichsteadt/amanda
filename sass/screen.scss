@@ -1,0 +1,230 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+// @import "compass/reset";
+$primary: #D2B33F;
+$secondary: #A8AE6A;
+$accent: #82674A;
+$accentText: lighten(#E8E3C8, 20%);
+// ====================================== Global Styles ======================================
+section {
+  margin-bottom: 40px;
+  min-height: 100vh;
+
+  h2 {
+    color: $secondary;
+    text-align: center;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+.darken-image {
+  filter: brightness(.7);
+}
+
+body {
+  font-family: 'Montserrat';
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Open Sans';
+}
+
+
+// ====================================== Navbar ======================================
+.navbar-fixed {
+  position: absolute;
+  display: none;
+}
+
+nav {
+  background-color: #fff;
+  color: $secondary;
+  padding: 0 10px;
+
+  ul {
+    a {
+      color: inherit;
+      font-size: 18px;
+      position: relative;
+      &.active {
+        .line {
+          opacity: 1;
+        }
+      }
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+
+  .line {
+    opacity: 0;
+    transition: opacity .2s ease;
+    border-top: 2px solid $secondary;
+    width: calc(100% - 30px);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -20px);
+  }
+}
+
+#nav-mobile {
+  @media screen and (max-width: 992px) {
+    & {
+      float: none !important;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+
+// ====================================== Splash ======================================
+#splash {
+  height: 100vh;
+  width: 100%;
+  background: url('../images/headshots/splash.png') no-repeat center center;
+  background-size: cover;
+
+  @media screen and (max-width: 992px) {
+    & {
+      background: url('../images/headshots/splash_mobile.png') no-repeat center center;
+      background-size: cover;
+    }
+  }
+}
+
+// ====================================== Gallery ======================================
+.modal {
+  width: 50%;
+  height: 95%;
+  max-height: 95%;
+
+  @media screen and (max-width: 992px) {
+    & {
+      width: 90%;
+    }
+  }
+
+  .modal-content {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.modal .modal-footer {
+  height: auto;
+}
+
+.slider .indicators .indicator-item.active {
+  background-color: #333;
+}
+
+.card-title {
+  color: $accent;
+}
+
+.card {
+  min-height: 302px;
+  &:hover {
+    .overlay {
+      opacity: 1;
+    }
+  }
+}
+
+.card-image {
+  position: relative;
+}
+
+.fa-expand {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  color: $secondary;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(0,0,0, 0.5);
+  opacity: 0;
+  transition: opacity .3s ease;
+  h4, h5 {
+    color: #fff;
+  }
+}
+
+// ====================================== Resume and Contact ======================================
+#about {
+  margin-bottom: 0;
+  padding-bottom: 0;
+
+  .row {
+    margin: 0;
+  }
+
+  .col {
+    min-height: 100vh;
+    padding: 0;
+  }
+
+  .bg-image {
+    background: url('../images/headshots/amanda_tall.JPG') no-repeat center center;
+    background-size: cover;
+  }
+
+  .bg-color {
+    padding: 20px 40px 50px 40px;
+    background-color: $primary;
+    display: flex;
+    align-items: space-around;
+    flex-wrap: wrap;
+
+    h2, p {
+      color: $accentText;
+      text-align: left;
+    }
+
+    p {
+      font-size: 26px;
+    }
+
+    li {
+      font-size: 18px;
+    }
+  }
+
+  button {
+    background-color: $accentText;
+    color: $primary;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+  }
+}
+
+// ====================================== Footer ======================================
+footer {
+  height: 50px;
+  border-top: 1px solid #ccc;
+  text-align: center;
+}
